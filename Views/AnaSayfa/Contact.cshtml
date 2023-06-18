@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_MyLayout .cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <main class="main-aboutpage">
+        <section class="contact-area">
+            <div class="container">
+                <div class="gx-row d-flex justify-content-between gap-24">
+                    <div class="contact-infos">
+                        <h3 data-aos="fade-up">Bilgiler</h3>
+                        <ul class="contact-details">
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-mail"></i>
+                                </div>
+                                <div class="right">
+                                    <span>MAIL</span>
+                                    <h4>ahmetcanceylann81@gmail.com</h4>
+                                    
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-phone"></i>
+                                </div>
+                                <div class="right">
+                                    <span>Telefon</span>
+                                    <h4>0507 118 51 06</h4>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center" data-aos="zoom-in">
+                                <div class="icon-box shadow-box">
+                                    <i class="iconoir-pin-alt"></i>
+                                </div>
+                                <div class="right">
+                                    <span>Lokasyon</span>
+                                    <h4>Düzce/Merkez</h4>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 data-aos="fade-up">Sosyal Medya</h3>
+                        <ul class="social-links d-flex align-center" data-aos="zoom-in">
+                            <li><a class="shadow-box" href="mailto:ahmetcanceylann81@gmail.com"><i class="iconoir-send-mail"></i></a></li>
+                            <li><a class="shadow-box" href="https://www.linkedin.com/in/ahmet-can-ceylan/" target="_blank"><i class="iconoir-linkedin"></i></a></li>
+                            <li><a class="shadow-box" href="https://github.com/IACCI" target="_blank"><i class="iconoir-github"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                    <div data-aos="zoom-in" class="contact-form">
+                        <div class="shadow-box">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon3.png" alt="Icon">
+                            <h1>Birlikte <span>Çalışalım.</span></h1>
+                            <form method="POST" action="https://wpriverthemes.com/landing/gridx-html/mailer.php">
+                                <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                                   Mesaınız Başarıyla Gönderilmiştir. 
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="full-name" id="full-name" placeholder="Ad Soyad  *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" id="email" placeholder="Email *">
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="subject" id="subject" placeholder="Konu *">
+                                </div>
+                                <div class="input-group">
+                                    <textarea name="message" id="message" placeholder="Mesajınız... *"></textarea>
+                                </div>
+                                <div class="input-group">
+                                    <button class="theme-btn submit-btn" name="submit" type="submit">GÖNDER</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:51:12 GMT -->
+</html>

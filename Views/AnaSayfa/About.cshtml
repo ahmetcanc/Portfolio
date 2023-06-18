@@ -1,0 +1,151 @@
+﻿@model List<Portfolyom.Models.About>
+@{
+    Layout = "~/Views/Shared/_MyLayout .cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:51:08 GMT -->
+
+<body>
+
+    <main class="main-aboutpage">
+
+        <!-- Header -->
+        
+        <!-- About -->
+        <section class="about-area">
+            <div class="container">
+                <div class="d-flex about-me-wrap align-items-start gap-24">
+                    @foreach (var item in Model)
+                    {
+                        <div data-aos="zoom-in">
+
+                            <div class="about-image-box shadow-box">
+                                <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+
+                                <img src="@item.Image" alt="About Me">
+
+                            </div>
+                        </div>
+
+                        <div class="about-details" data-aos="zoom-in">
+                            <h1 class="section-heading" data-aos="fade-up"><img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star-2.png" alt="Star">hakkımda<img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star-2.png" alt="Star"></h1>
+                            <div class="about-details-inner shadow-box">
+                                <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon2.png" alt="Star">
+                                <h1>Ahmet Can Ceylan</h1>
+                                <p>@item.About_Desc</p>
+                                
+                            </div>
+
+                        </div>
+                    }
+
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-edc-exp about-experience shadow-box">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                            <h3>DENEYİM</h3>
+
+                            <ul>
+                                <li>
+                                    <p class="date">Devam Ediyor</p>
+                                    <h2>BackEnd Developer</h2>
+                                    <p class="type">Prime Modality</p>
+                                </li>
+                                <li>
+                                    <p class="date">5 ay</p>
+                                    <h2>Software Developer</h2>
+                                    <p class="type">BEEKOD Yazılım</p>
+                                </li>
+                                <li>
+                                    <p class="date">5 ay</p>
+                                    <h2>Bilgi İşlem Çalışanı</h2>
+                                    <p class="type">Düzce Gençlik ve Spor İl Müdürlüğü</p>
+                                </li>
+                                <li>
+                                    <p class="date">3 ay</p>
+                                    <h2>Software Developer</h2>
+                                    <p class="type">Open Yazılım</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-edc-exp about-education shadow-box">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                            <h3>EĞİTİM</h3>
+
+                            <ul>
+                                <li>
+                                    <p class="date">2018 - 2022</p>
+                                    <p>Yönetim Bilişim Sistemleri</p>
+                                    <p class="type">Düzce Üniversitesi</p>
+                                </li>
+                                <li>
+                                    <p class="date">2014 - 2018</p>
+                                    <p class="type">Farabi Anadolu Lisesi</p>
+                                </li>
+                                <li>
+                                    <p class="date">2006 - 2014</p>
+                                    <p class="type">Nejdet Bıçakçıoğlu İlk-Orta Okulu</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-12">
+                        <div class="d-flex profile-contact-credentials-wrap gap-24">
+
+                                <div class="about-profile-box info-box shadow-box h-full">
+                                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <h4 style="text-align:center;">İLETİŞİM</h4>
+                                    <div class="inner-profile-icons shadow-box">
+                                        <a href="https://www.linkedin.com/in/ahmet-can-ceylan/" target="_blank">
+                                            <i class="iconoir-linkedin"></i>
+                                        </a>
+
+                                        <a href="mailto:ahmetcanceylann81@gmail.com">
+                                            <i class="iconoir-send-mail"></i>
+                                        </a>
+
+                                        <a href="https://github.com/IACCI" target="_blank">
+                                            <i class="iconoir-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="about-contact-box info-box shadow-box">
+                                    <a class="overlay-link"></a>
+                                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon2.png" alt="Icon" class="star-icon">
+                                    <h1>İletişime <br><span>Geçebilirsiniz.</span></h1>
+                                    <a href="#" class="about-btn">
+                                        <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon.svg" alt="Button">
+                                    </a>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        
+
+    </main>
+</body>
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:51:09 GMT -->
+</html>

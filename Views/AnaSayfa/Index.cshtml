@@ -1,0 +1,187 @@
+﻿@model List<Portfolyom.Models.CartInfo>
+@{
+    Layout = "~/Views/Shared/_MyLayout .cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:50:48 GMT -->
+
+<body>
+
+    <main class="main-homepage">
+
+        <!-- Header -->
+       
+
+        <!-- About -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-6" data-aos="zoom-in">
+                            <div class="about-me-box shadow-box">
+                                <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                <div class="img-box">
+                                    <img src="@item.Image" alt="About Me">
+                                </div>
+                                <div class="infos">
+                                    <h4>@item.Title</h4>
+                                    <h1>AHMET CAN CEYLAN</h1>
+                                    <p>Full Stack Developer</p>
+                                    <a href="@Url.Action("Index", "Login")">.</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="col-md-6">
+                        <div class="about-credentials-wrap">
+                            <div data-aos="zoom-in">
+                                <div class="banner shadow-box">
+                                    <div class="marquee">
+                                        <div>
+                                            <span><b>CSS</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>HTML</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>C#</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>.Net Mvc</b><img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>Jquery</b><img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>GoLang</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>C</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>JavaScript</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>Entity Framework</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>Visual Studio</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>Visual Studio Code</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>React</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"><b>React Native</b> <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star1.svg" alt="Star"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="gx-row d-flex gap-24">
+                                <div data-aos="zoom-in">
+                                    <div class="about-crenditials-box info-box shadow-box h-full">
+                                        <a class="overlay-link" href="@Url.Action("About", "AnaSayfa")"></a>
+                                        <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                        <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/sign.png" alt="Sign">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="infos">
+                                                <h1>Bilgiler</h1>
+                                            </div>
+
+                                            <a class="about-btn">
+                                                <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon.svg" alt="Button">
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div data-aos="zoom-in">
+                                    <div class="about-project-box info-box shadow-box h-full">
+                                        <a class="overlay-link" href="@Url.Action("Projects", "AnaSayfa")"></a>
+                                        <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                        <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/my-works.png" alt="My Works">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="infos">
+                                                <h1>Projeler</h1>
+                                            </div>
+
+                                            <a href="#" class="about-btn">
+                                                <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon.svg" alt="Button">
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-12">
+                        <div class="blog-service-profile-wrap d-flex gap-24">
+                            
+
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="about-services-box info-box shadow-box h-full">
+                                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="icon-boxes">
+                                        <i class="iconoir-code"></i>
+                                        <i class="iconoir-design-pencil"></i>
+                                        <i class="iconoir-web-window"></i>
+                                        <i class="iconoir-dev-mode-phone"></i>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                                <div class="about-profile-box info-box shadow-box h-full">
+                                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                    <div class="inner-profile-icons shadow-box">
+                                        <a href="https://www.linkedin.com/in/ahmet-can-ceylan/" target="_blank">
+                                            <i class="iconoir-linkedin"></i>
+                                        </a>
+
+                                        <a href="mailto:ahmetcanceylann81@gmail.com">
+                                            <i class="iconoir-send-mail"></i>
+                                        </a>
+
+                                        <a href="https://github.com/IACCI" target="_blank">
+                                            <i class="iconoir-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-24">
+                    <div class="col-md-6" data-aos="zoom-in">
+
+                        <div class="about-client-box info-box shadow-box">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                            <div class="clients d-flex align-items-start gap-24 justify-content-center">
+                                <div class="client-item">
+                                    <h1>03</h1>
+                                    <p>Yıl <br>Deneyim</p>
+                                </div>
+
+                                <div class="client-item">
+                                    <h1>+10</h1>
+                                    <p>Müşteri</p>
+                                </div>
+
+                                <div class="client-item">
+                                    <h1>+20</h1>
+                                    <p>Toplam <br>Proje</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    @*<div class="col-md-6" data-aos="zoom-in">
+
+                        <div class="about-contact-box info-box shadow-box">
+                            <a class="overlay-link" href="contact.html"></a>
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon2.png" alt="Icon" class="star-icon">
+                            <h1>Let's <br>work <span>together.</span></h1>
+                            <a href="#" class="about-btn">
+                                <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon.svg" alt="Button">
+                            </a>
+                        </div>
+
+                    </div>*@
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+       
+
+    </main>
+</body>
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:50:55 GMT -->
+</html>

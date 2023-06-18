@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMET CAN CEYLAN</title>
+    <link rel="icon" type="image/png" href="~/Content/Images/logo.png" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/Content/PortfolyoProject/cdn.jsdelivr.net/gh/iconoir-icons/iconoir%40main/css/iconoir.css">
+
+    <link rel="stylesheet" href="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/css/aos.css">
+
+    <link rel="stylesheet" href="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header-area">
+        <div class="container">
+            <div class="gx-row d-flex align-items-center justify-content-between">
+                <a href="" class="logo">
+                    <img src="~/Content/Images/logobeyaz.png" alt="Logo" style="width: 140px; height: 50px;">
+                </a>
+
+
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="@Url.Action("Index", "AnaSayfa")">Ana Sayfa</a></li>
+                        <li><a href="@Url.Action("About", "AnaSayfa")">Hakkımda</a></li>
+                        <li><a href="@Url.Action("Projects", "AnaSayfa")">Projeler</a></li>
+                        @*<li><a href="/AnaSayfa/Contact">İletişim</a></li>*@
+                    </ul>
+
+                </nav>
+
+                <a href="~/Content/Ahmet can ceylan (1).pdf" class="theme-btn" download>Özgeçmiş <i class="fa-solid fa-download" style="color: #ffffff;"></i></a>
+
+
+                <div class="show-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer class="footer-area">
+        <div class="container">
+            <div class="footer-content text-center">
+                <a href="" class="logo">
+                    <img src="~/Content/Images/logobeyaz.png" alt="Logo" style="width: 140px; height: 50px;">
+                </a>
+                <ul class="footer-menu">
+                    <li><a href="@Url.Action("Index", "AnaSayfa")">Ana Sayfa</a></li>
+                    <li><a href="@Url.Action("About", "AnaSayfa")">Hakkımda</a></li>
+                    <li><a href="@Url.Action("Projects", "AnaSayfa")">Projeler</a></li>
+                    @*<li><a href="/AnaSayfa/Contact">İletişim</a></li>*@
+                </ul>
+                <p class="copyright">
+                    &copy; All rights reserved by <span>ACC</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/js/jquery-3.6.4.js"></script>
+    <script src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/js/aos.js"></script>
+    <script src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/js/main.js"></script>
+</body>
+</html>

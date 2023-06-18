@@ -1,0 +1,74 @@
+﻿@model List<Portfolyom.Models.Project>
+@{
+    Layout = "~/Views/Shared/_MyLayout .cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/works.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:51:09 GMT -->
+
+<body>
+
+    <main class="main-workspage">
+
+        <!-- Header -->
+        <!-- Projects -->
+        <section class="projects-area">
+            <div class="container">
+                <h1 class="section-heading" data-aos="fade-up">
+                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star-2.png" alt="Star"> Projeler
+                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star-2.png" alt="Star">
+                </h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="section-heading" data-aos="fade-up">
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star-2.png" alt="Star"> Projeler
+                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/star-2.png" alt="Star">
+                        </h1>
+
+                        @for (var i = 0; i < Model.Count; i += 4)
+                        {
+                            <div class="row">
+                                @for (var j = i; j < i + 4 && j < Model.Count; j++)
+                                {
+                                    var item = Model[j];
+                                    <div data-aos="zoom-in" class="col-md-3">
+                                        <div class="project-item shadow-box">
+                                            <a class="overlay-link" href="@item.Project_Url" target="_blank"></a>
+                                            <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/bg1.png" alt="BG" class="bg-img">
+                                            <div class="project-img">
+                                                <img style="height:200px;" src="@item.Project_Image" alt="Project">
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="project-info">
+                                                    <p>@item.Project_Info</p>
+                                                    <h1>@item.Project_Name</h1>
+                                                </div>
+                                                <a href="@item.Project_Url" class="project-btn">
+                                                    <img src="~/Content/PortfolyoProject/wpriverthemes.com/landing/gridx-html/assets/images/icon.svg" alt="Button">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Footer -->
+
+
+    </main>
+</body>
+
+<!-- Mirrored from wpriverthemes.com/landing/gridx-html/works.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 May 2023 13:51:12 GMT -->
+</html>
